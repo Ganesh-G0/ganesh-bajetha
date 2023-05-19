@@ -1,0 +1,169 @@
+:root {
+    --main-red: #be3144;
+    --main-blue: #45567d;
+    --main-gray: #303841;
+}
+html {
+    background-color: rgb(37, 36, 36);
+    color: white;
+    text-align: center;
+}
+body {
+    margin: 0;
+}
+
+ul, li {
+    list-style: none;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+}
+
+li > a {
+    float: left;
+    color: #f2f2f2;
+    font-size: x-large;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 14px 16px;
+    margin: 0 auto;
+}
+
+li > a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+li > a:active {
+    background-color: #ddd;
+    color: black;
+}
+
+h1 {
+    text-align: center;
+    margin: 50px auto 0px auto;
+}
+
+#welcome-section {
+    padding: 165px 0 0 0;
+    font-size: x-large;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+#welcome-section > p {
+    color: #be3144;
+    font-weight: 700;
+    font-style: italic;
+}
+
+#projects {
+    background-color: var(--main-blue);
+    color: white;
+    height: 150vh;
+    padding-top: 150px;
+}
+
+#projects > h1 {
+    font-size: xx-large;
+    border-bottom: 1px solid white;
+}
+
+.projects-grid {
+    display: block;
+}
+
+.projects-grid > a > img {
+    margin-top: 25px;
+    width: 350px;
+    height: 300px;
+    border: 2px solid black;
+}
+.projects-grid > a > img:hover {
+    border: 2px solid white;
+
+}
+
+.projects-grid > a {
+    text-decoration: none;
+    font-size: x-large;
+    color: black;
+}
+.code {
+    color: var(--main-blue);
+    transition: color 0.1s ease-out;
+}
+
+.projects-grid > a:hover, a:active {
+    color: white;
+}
+
+.projects-grid > a:hover > p > span {
+    color: white;
+}
+
+#about {
+    padding: 165px 0 0 0;
+    font-size: x-large;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    color: #000;
+    background-image: linear-gradient(skyblue, lawngreen);
+}
+
+ul {
+    max-width: 550px;
+    margin: 0px auto 50px auto;
+    text-align: left;
+    line-height: 1.9;
+}
+
+#contact {
+    height: 60vh;
+    padding-top: 150px;
+}
+
+#contact > div > a {
+    font-size: x-large;
+    text-decoration: none;
+    padding: 0 14px ;
+    color: white;
+}
+
+#contact > div > a:hover {
+    font-size: xx-large;
+    color:#be3144;
+}
+
+#contact > aside {
+font-style: italic;
+}
+
+#contact > aside:hover {
+    font-size: xx-large;
+    cursor: none;
+    font-style: italic;
+}
+
+footer {
+    border-top: 2px solid white;
+}
+footer > p {
+    text-align: left;
+}
+.copyrights {
+    text-align: right;
+}
+
+@media screen and (max-width: 500px) {
+    .img {
+      width: 100%;
+    }
+}
