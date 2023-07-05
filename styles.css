@@ -18,6 +18,7 @@ html {
 }
 body {
   font-family: 'Poppins', sans-serif;
+  background-color: #0E2954;
 }
 h1, h2 {
   font-family: 'Raleway', sans-serif;
@@ -28,7 +29,7 @@ ul {
 }
 #navbar {
   justify-content: center;
-  background-color: #450f6b5b;
+  background-color: #000000;
   z-index: 11;
 }
 .nav-item >  a {
@@ -40,6 +41,9 @@ ul {
   color: #590696;
   background-color: var(--main-white);
 }
+.bg-img {
+  background-image: linear-gradient(90deg, purple, rgb(180, 47, 114), #590696);
+}
 section {
   color: whitesmoke;
 }
@@ -50,423 +54,158 @@ section {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.hdwallpapers.in%2Fdownload%2Fsolar_system_planets_illustration_4k-HD.jpg&f=1&nofb=1&ipt=64e5d6d949af8067afba3a64ca7cf53499bc959d6896d9496442c02f5e17f4c5&ipo=images);
-  background-repeat: no-repeat;
-  background-position: 50%;
-  background-size: cover;
+  
 }
 .text-area {
-  background-color: rgba(17, 6, 27, 0.699);
   padding: 2rem;
-  border-radius: 1rem;
+  margin: 2rem;
+  border: .2rem solid;
+  border-radius: .4rem;
+  border-radius: 6rem;
+  background-color: rgba(6, 1, 12, 0.76);
 }
 .text-area > h1 {
   font-size: 6rem;
 }
 .text-area > p {
-  color: #be3144;
-  font-size: 2.5rem;
-  font-size: 4rem;
   font-weight: 500;
+  color: #be3144;
+  font-size: 4rem;
   font-style: italic;
 }
-
 .project {
   height: 110dvh;
-  background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.hdwallpapers.in%2Fdownload%2Fsolar_system_planets_illustration_4k-HD.jpg&f=1&nofb=1&ipt=64e5d6d949af8067afba3a64ca7cf53499bc959d6896d9496442c02f5e17f4c5&ipo=images);
-  background-repeat: no-repeat;
-  background-position: 55%; 
-  background-size: cover;
-}
-.projects-section-header {
-  font-size: 4.2rem;
-  padding-top: 6rem;
-  border-bottom: .4rem solid;
-  background-color: rgba(17, 6, 27, 0.699);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .project > .row {
   margin: 1rem;
-  padding-top: 1rem;
 }
-.row > div > a {
+.col-sm > a {
   color: white;
-  font-size: 2rem;
   text-decoration: none;
 }
 .col-sm > a > .img, .project-title {
   /* max-width: 420px; */
 }
 .project-title {
-  background-color: #590696;
+  font-size: 3.2rem;
   text-align: center;
-  font-size: 2.2rem;
+  background-color: #590696;
 }
 span{
   color: #590696;
 }
-.row > div > a:hover p  {
+.col-sm > a:hover > p  {
   color: black;
   background-color: white;
 }
-.row  div  a:hover p span {
+.col-sm > a:hover > p > span {
   color: var(--main-red);
 }
 
 #about {
   padding-top: 4.3rem;
   height: 110dvh;
-  margin: 0 auto;
-  color: white;
-  background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.hdwallpapers.in%2Fdownload%2Fsolar_system_planets_illustration_4k-HD.jpg&f=1&nofb=1&ipt=64e5d6d949af8067afba3a64ca7cf53499bc959d6896d9496442c02f5e17f4c5&ipo=images);
-  background-repeat: no-repeat;
-  background-position: 65%; 
-  background-size: cover;
+  margin: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 #about > h1 {
   font-size: 4.5rem;
   font-style: italic;
-  border-bottom: .4rem solid whitesmoke;
 }
 #about > ul {
   margin: 0 auto;
-  max-width: 75rem;
+  max-width: 80rem;
 }
-#about li {
-  font-size: 2.2rem;
-  font-weight: 600;
+strong {
+  color: hotpink;
+}
+#about > ul > li {
+  font-size: 2.8rem;
+  font-weight: 500;
 }
 #contact {
-  color: var(--main-white);
   height: 110dvh;
   text-align: center;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-  background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.hdwallpapers.in%2Fdownload%2Fsolar_system_planets_illustration_4k-HD.jpg&f=1&nofb=1&ipt=64e5d6d949af8067afba3a64ca7cf53499bc959d6896d9496442c02f5e17f4c5&ipo=images);
-  background-repeat: no-repeat;
-  background-position: 80%; 
-  background-size: cover;
 }
 .contact-info > h1 {
-  font-size: 5.5rem;
+  /* font-size: 5.5rem; */
 }
 .contact-info > p {
-  font-size: 3.4rem;
+  font-size: 2.5rem;
   font-style: italic;
   font-weight: 500;
   color: var(--main-red);
 }
 .contact-links {
-  padding-top: 6rem;
+  margin-top: 3rem;
 }
 .contact-links > a {
-  background-color: rgb(35, 76, 104);
+  background-color: #303841;
   font-size: 2.5rem;
   color: whitesmoke;
   margin: .2rem;
+}
+.contact-links > a:hover {
+  background-color: rgb(19, 85, 129);
 }
 .contact-details:hover {
   transform: translateY(-1.8rem);
 }
 
-/* 4K */
-@media (max-width: 2560px) {
-}
-/* Laptop Large */
-@media (max-width: 1440px) {
-}
-/* Laptop */
-@media (max-width: 1024px) {
-  .nav-item > a {
-    margin: 0 .1rem;
-    font-size: 3.6rem;
-    padding: .4rem;
-  }
-  .welcome-section {
-    background-position: 5%;
-  }
-  .text-area > h1{
-    font-size: 5rem;
-  }
-  .text-area > p{
-    font-size: 3.5rem;
-  }
-  .project {
-    background-position: 25%;
-  }
-  .projects-section-header > h1 {
-    font-size: 5rem;
-    padding-top: 2rem;
-  }
-  .col-sm > a > img {
-    /* max-width: 102rem; */
-  }
-  #about {
-    padding-top: 4rem;
-    background-position: 75%;
-  }
-  #about > h1{
-    font-size: 2.5rem;
-  }
-  strong {
-    color: hotpink;
-  }
-  #about > ul > li {
-    font-size: 1.9rem;
-    font-weight: 500;
-  }
-  #contact {
-    background-position: 80%;
-  }
-  .contact-info > h1 {
-    font-size: 4rem;
-  }
-  .contact-info > p {
-    font-size: 2.4rem;
-  }
-  .contact-links > a {
-    background-color: #303841;
-    font-size: 2.5rem;
-  }
-  .contact-details:hover {
-    /* transform: translateX(2rem); */
-  }
-}
-/* Tablet */
-@media (max-width: 768px) {
-  .nav-item > a {
-    margin: 0 .1rem;
-    font-size: 2.9rem;
-    padding: .4rem;
-  }
-  .welcome-section {
-    background-position: 66%;
-  }
-  .text-area > h1{
-    font-size: 5.2rem;
-  }
-  .text-area > p{
-    font-size: 3.8rem;
-  }
-  .project {
-    background-position: 70%;
-  }
-  .projects-section-header > h1 {
-    font-size: 3.5rem;
-  }
-  .col-sm > a > img {
-    width: 25rem;
-  }
-  .project-title {
-    width: 25rem;
-  }
-  #about {
-    padding-top: 4rem;
-    background-position: 75%;
-  }
-  #about > h1{
-    font-size: 3.5rem;
-  }
-  strong {
-    color: hotpink;
-  }
-  #about > ul > li {
-    font-size: 2.8rem;
-    font-weight: 500;
-  }
-  #contact {
-    background-position: 85%;
-  }
-  .contact-info > h1 {
-    font-size: 4.2rem;
-  }
-  .contact-info > p {
-    font-size: 3rem;
-  }
-  .contact-links > a {
-    background-color: #303841;
-    font-size: 2.9rem;
-  }
-  .contact-details:hover {
-    transform: translateY(-2rem);
-  }
-}
-/* Mobile large */
-@media (max-width: 425px) {
-  .nav-item > a {
-    margin: 0 .1rem;
-    font-size: 2.6rem;
-    padding: .4rem;
-  }
-  .welcome-section {
-    background-position: 65%;
-  }
-  .text-area > h1{
-    font-size: 5rem;
-  }
-  .text-area > p{
-    font-size: 3.5rem;
-  }
-  .project {
-    background-position: 70%;
-  }
-  .projects-section-header > h1 {
-    font-size: 3rem;
-  }
-  .col-sm > a > img {
-    width: 35rem;
-    height: 16rem;
-  }
-  .project-title {
-    width: 35rem;
-  }
-  #about {
-    padding-top: 4rem;
-    background-position: 75%;
-  }
-  #about > h1{
-    font-size: 2.5rem;
-  }
-  strong {
-    color: hotpink;
-  }
-  #about > ul > li {
-    font-size: 2.5rem;
-    font-weight: 500;
-  }
-  #contact {
-    background-position: 80%;
-  }
-  .contact-info > h1 {
-    font-size: 4rem;
-  }
-  .contact-info > p {
-    font-size: 2.4rem;
-  }
-  .contact-links > a {
-    background-color: #303841;
-    font-size: 2.5rem;
-  }
-  .contact-details:hover {
-    /* transform: translateX(2rem); */
-  }
-}
-/* Mobile medium */
-@media (max-width: 375px) {
-  .nav-item > a {
-    margin: 0 .1rem;
-    font-size: 2rem;
-    padding: .4rem;
-  }
-  .welcome-section {
-    background-position: 65%;
-  }
-  .text-area > h1{
-    font-size: 5rem;
-  }
-  .text-area > p{
-    font-size: 3.5rem;
-  }
-  .project {
-    background-position: 70%;
-  }
-  .projects-section-header > h1 {
-    font-size: 3rem;
-  }
-  .col-sm > a > img {
-    width: 32rem;
-    height: 16rem;
-  }
-  .project-title {
-    width: 32rem;
-  }
-  #about {
-    padding-top: 4rem;
-    background-position: 75%;
-  }
-  #about > h1{
-    font-size: 2.5rem;
-  }
-  strong {
-    color: hotpink;
-  }
-  #about > ul > li {
-    font-size: 1.9rem;
-    font-weight: 500;
-  }
-  #contact {
-    background-position: 80%;
-  }
-  .contact-info > h1 {
-    font-size: 4rem;
-  }
-  .contact-info > p {
-    font-size: 2.4rem;
-  }
-  .contact-links > a {
-    background-color: #303841;
-    font-size: 2.5rem;
-  }
-  .contact-details:hover {
-    transform: translateX(2rem);
-  }
-}
 /* Mobile small */
-@media (max-width: 320px) {
+@media (max-width: 320px), (max-width: 768px) { 
   .nav-item > a {
     margin: 0 .1rem;
-    font-size: 1.8rem;
+    font-size: 1.9rem;
     padding: .4rem;
   }
-  .welcome-section {
-    background-position: 65%;
-  }
-  .text-area > h1{
-    font-size: 5rem;
+  .text-area {
+    border-radius: 1.2rem 0;
   }
   .text-area > p{
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
   .project {
-    background-position: 70%;
+    padding-top: 16rem;
+    margin-bottom: 8rem;
   }
   .projects-section-header > h1 {
     font-size: 3rem;
+    margin: 0;
+    padding: 0;
   }
   .col-sm > a > img {
     width: 25rem;
     height: 16rem;
   }
   .project-title {
-    width: 25rem;
+    font-size: 2rem;
   }
   #about {
-    padding-top: 4rem;
-    background-position: 75%;
+    display: block;
   }
   #about > h1{
-    font-size: 2.5rem;
-  }
-  strong {
-    color: hotpink;
+    font-size: 3.5rem;
   }
   #about > ul > li {
-    font-size: 1.9rem;
-    font-weight: 500;
-  }
-  #contact {
-    background-position: 80%;
-  }
-  .contact-info > h1 {
-    font-size: 4rem;
+    font-size: 2rem;
   }
   .contact-info > p {
-    font-size: 2.4rem;
+    font-size: 1.5rem;
   }
   .contact-links > a {
-    background-color: #303841;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
   }
   .contact-details:hover {
     transform: translateX(2rem);
