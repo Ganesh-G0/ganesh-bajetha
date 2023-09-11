@@ -1,109 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/8eb453f12c.js"
+      crossorigin="anonymous"
+    ></script>
     <title>G's Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/8eb453f12c.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap" rel="stylesheet">
-</head>
-<body>
-    <!-- Start Navbar -->
-    <nav id="navbar" class="navbar navbar-expand fixed-top">
-        <ul class="navbar-nav">
-            <li class="nav-item"><a href="#welcome-section" class="nav-link">Home</a></li>
-            <li class="nav-item"><a href="#project" class="nav-link">Projects</a></li>
-            <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-            <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
-        </ul>
+  </head>
+  <body>
+    <nav id="navbar" class="nav">
+      <ul class="nav-list">
+        <li><a href="#welcome-section">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
-    <!-- End Navbar -->
-    <!-- Start Welcome Section -->
-    <div class="bg-img">
-        <section id="welcome-section" class="welcome-section">
-            <div class="text-area">
-                <h1>Hi, I am Ganesh</h1> 
-                <p>an entry-level web developer</p>
-            </div>
-        </section>
-        <!-- End Welcome Section -->
-        <!-- Start Project -->
-        <section id="project" class="project">
-            <div class="projects-section-header text-area">
-                <h1>These are some of my projects</h1>
-            </div>
-            <div class="row text-area">
-                <div class="col-sm">
-                    <a href="https://ganesh-g0.github.io/Survey-Form/" target="_blank">
-                        <img src="img/survey-form.png" alt="form survey" class="img img-fluid">
-                        <p class="project-title">
-                            <span>&lt;</span>Survey Form <span>/&gt;</span>
-                        </p>
-                    </a>
-                </div>
-                <div class="col-sm">
-                    <a href="https://ganesh-g0.github.io/Dr.NormanBorlaug/" target="_blank">
-                        <img src="img/norman-borlaug.png" alt="Norman Borlaug" class="img img-fluid">
-                        <p class="project-title">
-                            <span>&lt;</span>Tribute Page <span>/&gt;</span>
-                        </p>
-                    </a>
-                </div>
-                <div class="col-sm">
-                    <a href="https://ganesh-g0.github.io/JavaScript_Documentation/" target="_blank">
-                        <img src="img/documentation.png" alt="JavaScript" class="img img-fluid" >
-                        <p class="project-title">
-                            <span>&lt;</span>Documentation<span>/&gt;</span>
-                        </p>
-                    </a>
-                </div>
-                <div class="col-sm">
-                    <a href="https://ganesh-g0.github.io/apple/" target="_blank">
-                        <img src="img/product-page.png" alt="Product-page" class="img img-fluid">
-                        <p class="project-title">
-                            <span>&lt;</span>Product Page<span>/&gt;</span>
-                        </p>
-                    </a>
-                </div> 
-            </div>
-        </section>
-        <!-- End Project -->
-        <!-- Start About-->
-        <section id="about">
-            <h1 class="text-area">A Quick Time line :</h1>
-            <ul class="text-area">
-                <li><strong>2001 :</strong> Born in Dadholi, Uttrakhand</li>
-                <li><strong>2011 :</strong> Moved to Delhi, to continue School</li>
-                <li><strong>2017 :</strong> 10th standard</li>
-                <li><strong>2019 :</strong> 12th standard with Commerce</li>
-                <li><strong>2019 :</strong> Mobile <i class="fa fa-mobile"></i></li>
-                <li><strong>2020 :</strong> Laptop <i class="fa fa-laptop"></i></li>
-                <li><strong>2020 :</strong> Internet <i class="fa fa-wifi"></i></li>
-                <li><strong>2022 :</strong> B.Com <i class="fa fa-graduation-cap"></i></li>
-                <li><strong>2022 :</strong> PC <i class="fa fa-desktop"></i></li>
-                <li><strong>2022 :</strong> <i>Python</i> as introductory language to programming</li>
-                <li><strong>2023 :</strong> <i>HTML, CSS and Bootstrap</i>, which led to Creation of this webpage <hr> Currently learning: <i>JavaScript</i></li>
-            </ul>
-        </section>
-        <!-- End About-->
-        <!-- Start Contact-->
-        <section id="contact">
-            <div class="contact-info text-area">
-                <h1>Social Handles</h1>
-                <p>#Also note these are the only Active Social Handles that I have</p>
-            </div>
-            <div class="contact-links text-area">
-                <a href="https://www.freecodecamp.org/certification/Ganesh_/responsive-web-design" class="btn contact-details" target="_blank"><i class="fa fa-free-code-camp fa-1x"></i> freeCodeCamp</a>
-                <a href="https://github.com/Ganesh-G0" class="btn contact-details" target="_blank"><i class="fab fa-github fa-1x"></i> github</a>
-                <a href="ganeshbajetha2@gmail.com" class="btn contact-details" target="_blank"><i class="fa fa-at fa-1x"></i> Send an Email</a>
-                <a href="+9190150147135" class="btn contact-details" target="_blank"><i class="fa fa-whatsapp fa-1x"></i> Drop a Message</a>
-            </div>
-        </section>
-        <!-- End Contact-->
+    <div class="area">
+      <section id="welcome-section" class="welcome-section">
+        <div class="welcome-section-header text-area">
+          <h1>Hi, I am Ganesh &#128075;</h1>
+          <p>an entry-level web developer</p>
+        </div>
+      </section>
+      <section id="projects" class="projects-section">
+        <div class="projects-section-header text-area">
+          <h1>Projects</h1>
+          <p>for freeCodeCamp</p>
+        </div>
+        <div class="projects-grid text-area">
+          <a
+            href="https://ganesh-g0.github.io/Survey-Form/"
+            target="_blank"
+            class="project project-tile"
+          >
+            <img
+              src="https://raw.githubusercontent.com/Ganesh-G0/ganesh-webpage/main/img/survey-form.png"
+              alt="form survey"
+              class="project-img"
+            />
+            <p class="project-title">
+              <span class="code">&lt;</span>Survey Form
+              <span class="code">/&gt;</span>
+            </p>
+          </a>
+          <a
+            href="https://ganesh-g0.github.io/Dr.NormanBorlaug/"
+            target="_blank"
+            class="project project-tile"
+          >
+            <img
+              src="https://raw.githubusercontent.com/Ganesh-G0/ganesh-webpage/main/img/norman-borlaug.png"
+              alt="Norman Borlaug"
+              class="project-img"
+            />
+            <p class="project-title">
+              <span class="code">&lt;</span>Tribute Page
+              <span class="code">/&gt;</span>
+            </p>
+          </a>
+          <a
+            href="https://ganesh-g0.github.io/JavaScript_Documentation/"
+            target="_blank"
+            class="project project-tile"
+          >
+            <img
+              src="https://raw.githubusercontent.com/Ganesh-G0/ganesh-webpage/main/img/documentation.png"
+              alt="JavaScript"
+              class="project-img"
+            />
+            <p class="project-title">
+              <span class="code">&lt;</span>Documentation<span class="code"
+                >/&gt;</span
+              >
+            </p>
+          </a>
+          <a
+            href="https://ganesh-g0.github.io/apple/"
+            target="_blank"
+            class="project project-tile"
+          >
+            <img
+              src="https://raw.githubusercontent.com/Ganesh-G0/ganesh-webpage/main/img/product-page.png"
+              alt="Product-page"
+              class="project-img"
+            />
+            <p class="project-title">
+              <span class="code">&lt;</span>apple Page<span class="code"
+                >/&gt;</span
+              >
+            </p>
+          </a>
+        </div>
+      </section>
+      <!-- End Project -->
+      <!-- Start About-->
+      <section id="about" class="about">
+        <div class="about-section-header text-area">
+          <h1>about</h1>
+          <p>Ganesh</p>
+        </div>
+        <ul class="about-details text-area">
+          <li><strong>2001 :</strong> Born in Dadholi, Uttrakhand</li>
+          <li><strong>2011 :</strong> Moved to Delhi, for continuing Studies</li>
+          <li><strong>2017 :</strong> High School</li>
+          <li><strong>2019 :</strong> Senior High Shool (Commerce) </li>
+          <li><strong>2019 :</strong> Mobile <i class="fa fa-mobile"></i></li>
+          <li><strong>2020 :</strong> Laptop <i class="fa fa-laptop"></i></li>
+          <li><strong>2020 :</strong> Internet <i class="fa fa-wifi"></i></li>
+          <li><strong>2022 :</strong> Under Graduation (B.Com) <i class="fa fa-graduation-cap"></i></li>
+          <li><strong>2022 :</strong> PC <i class="fa fa-desktop"></i></li>
+          <li><strong>2022 :</strong> <i>Python</i> as an introductory language for programming</li>
+          <hr />
+          <li><strong>2023 :</strong> Web Development</li>
+        </ul>
+      </section>
+      <!-- End About-->
+      <!-- Start Contact-->
+      <section id="contact" class="contact-section">
+        <div class="contact-section-header text-area">
+          <h2>Contact</h2>
+          <p>reach me</p>
+        </div>
+        <div class="contact-links text-area">
+          <a
+            href="https://www.freecodecamp.org/certification/Ganesh_/responsive-web-design"
+            class="btn contact-details"
+            id="profile-link"
+            target="_blank"
+            ><i class="fab fa-free-code-camp"></i> freeCodeCamp</a
+          >
+          <a
+            href="https://github.com/Ganesh-G0"
+            class="btn contact-details"
+            target="_blank"
+            ><i class="fab fa-github"></i> github</a
+          >
+          <a
+            href="ganeshbajetha2@gmail.com"
+            class="btn contact-details"
+            target="_blank"
+            ><i class="fa fa-at"></i> email</a
+          >
+          <a
+            href="+9190150147135"
+            class="btn contact-details animation"
+            target="_blank"
+            ><i class="fab fa-whatsapp"></i> Call</a
+          >
+        </div>
+      </section>
+      <!-- End Contact-->
+      <!-- Start Footer -->
+      <footer>
+        <p>copyrights <i class="fa fa-copyright"></i></p>
+        <p>created by Ganesh</p>
+      </footer>
+      <!-- End Footer -->
     </div>
 </body>
 </html>
