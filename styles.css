@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Raleway:wght@300;400;600&display=swap');
-
 :root {
   --text: #000000;
   --purple: #590696;
@@ -94,9 +93,11 @@ nav {
 }
 .hamburger-icon.open span:first-child {
   transform: rotate(45deg) translate(1rem, .2rem);
+  background-color: white;
 }
 .hamburger-icon.open span:nth-child(2) { opacity: 0; }
 .hamburger-icon.open span:last-child {
+  background-color: white;
   transform: rotate(-45deg) translate(1rem, -.2rem);
 }
 /* 
@@ -108,30 +109,51 @@ nav {
   z-index: 9;
   top: .5rem;
   right: .5rem;
+  top: 0;
+  right: 0;
   width: 14rem;
   max-height: 0; 
   overflow: hidden;
   position: absolute;
-  background-color: white;
+  /* background-image: linear-gradient(180deg, var(--blue), #D6589F); */
+  background-image: linear-gradient(var(--blue), var(--purple));
+  background-image: linear-gradient(180deg, var(--blue), #D20062);
   transition: all 0.3s ease-in-out;
 }
 .menu-links.open { 
   width: 100%;
-  max-height: 300px; 
+  min-height: 100dvh;  
+  /* max-height: 300px;   */
+  inset: 0 0 0 30%;
+  /* border-left: 2px solid black; */
   display: flex;
+  padding-left: 2rem;
   align-items: center;
+  align-items: start;
   flex-direction: column;
   justify-content: center;
 }
 .menu-links a {
   display: block;
   padding: 1rem;
-  color: black;
+  color: white;
   font-weight: 600;
-  font-size: 1.5rem;
+  font-size: 2rem;
   text-align: center;
   text-decoration: none; 
   transition: all 0.3s ease-in-out;
+}
+@media (hover: hover) {
+  .menu-links a:hover {
+    border-radius: 1rem;
+    border: 2px solid ;
+  }
+}
+@media (hover: none) {
+  .menu-links a:active {
+    border-radius: 1rem;
+    border-bottom: 2px solid;
+  }
 }
 /* --------------------------------------------------------Desktop Nav */
 .nav-links {
@@ -147,7 +169,6 @@ nav {
 }
 @media (hover: hover) {
   .nav-links a:hover {
-    color: black;
     color: var(--purple);
     border-radius:1rem;
     background-color: white;
@@ -155,7 +176,6 @@ nav {
 }
 @media (hover: none) {
   .nav-links a:active {
-    color: black;
     color: var(--purple);
     border-radius:1rem;
     background-color: white;
@@ -282,22 +302,26 @@ img {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-template-areas: 
+  'spaceE'
+  'country'
+  'calc'
   'age'
   'tip'
   'dash'
-  'rate'
-  'perf'
-  'test'
+  /* 'test' */
+  /* 'rate' */
   'btn'
   ;
 }
-.projects-grid div:nth-child(1) { grid-area: age;}
-.projects-grid div:nth-child(2) { grid-area: tip;}
-.projects-grid div:nth-child(3) { grid-area: dash;}
-.projects-grid div:nth-child(4) { grid-area: rate;}
-.projects-grid div:nth-child(5) { grid-area: perf;}
-.projects-grid div:nth-child(6) { grid-area: test;}
-.projects-grid div:nth-child(7) { grid-area: btn;}
+.projects-grid div:nth-child(1) { grid-area: spaceE;}
+.projects-grid div:nth-child(2) { grid-area: country;}
+.projects-grid div:nth-child(3) { grid-area: calc;}
+.projects-grid div:nth-child(4) { grid-area: age;}
+.projects-grid div:nth-child(5) { grid-area: tip;}
+.projects-grid div:nth-child(6) { grid-area: dash;}
+.projects-grid div:nth-child(7) { grid-area: test; display: none;}
+.projects-grid div:nth-child(8) { grid-area: rate; display: none;}
+.projects-grid div:nth-child(9) { grid-area: btn;}
 
 .code {
   color: white;
@@ -329,7 +353,8 @@ img {
     transition: ease-in-out 200ms;  
     background-color: #12a7e2;
   }
-}@media (hover:none) {
+}
+@media (hover:none) {
   .projects-grid div:active {
     color: white;
     cursor: pointer;
@@ -498,9 +523,10 @@ img {
   .projects-grid {
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: 
-    'age tip'
-    'dash rate'
-    'perf test'
+    'spaceE country'
+    'calc age' 
+    'tip dash'
+    /* 'test rate' */
     'btn btn'
     ;
   }
@@ -535,8 +561,9 @@ img {
     max-width: 90%;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: 
+    'spaceE country calc'
     'age tip dash'
-    'rate perf test'
+    /* 'test . rate' */
     '. btn .'
     ;
   }
@@ -547,5 +574,5 @@ img {
   .container{ 
     max-width: 1536px;
   margin: 0 auto;
-  }
+  }  
 };
